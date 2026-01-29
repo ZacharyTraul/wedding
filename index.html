@@ -1,1 +1,53 @@
-Website coming soon!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=EB+Garamond" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Zach and Ellie's Wedding</title>
+  </head>
+
+  <body>
+      <div id="header">
+          <h1>- Zachary & Elizabeth -</h1>
+          <p>Saturday, September 19, 2026 | Estes Park, CO</p>
+          <p id="countdown">42 days to go!</p>
+              <script>
+                // Below is shamelessly stolen from W3
+                // Set the date we're counting down to
+                var countDownDate = new Date("Sept 19, 2026 16:00").getTime();
+
+                // Update the count down every 1 second
+                var x = function() {
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+                  // Display the result in the element with id="countdown"
+                  document.getElementById("countdown").innerHTML = days + " days to go!";
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "Just Married 🚗";
+                  }
+                };
+
+                x();
+              </script>
+          <hr/>
+          <div id="navbar">
+            <a href="index.html"><p id="currentpage">HOME</p></a>
+            <a href="gettingthere.html"><p>GETTING THERE</p></a>
+            <a href="rsvp.html"><p>RSVP</p></a>
+          </div>
+          <hr/>
+      </div>
+      <div id="content">
+          <img width = "750px" style = "margin: 1em" src="zachandellie.JPG"/>
+          <p><small>Photo credit: Hannah Dearman-So</small></p>
+      </div>
+  </body>
+</html>
