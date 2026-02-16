@@ -50,6 +50,16 @@ a {
 }
 #content {
     flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+#content a {
+    color: #264E79;
+}
+#content #lodging {
+    width: 80%;
+    text-align: left;
+    margin: auto;
 }
 #rsvp-button {
     background-color: #EABAC8;
