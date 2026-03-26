@@ -74,3 +74,14 @@ a {
     padding: 1em 2em;
     font-weight: bold;
 }
+
+#centerer {
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+#centerer h1 {
+    text-align: center;
+}

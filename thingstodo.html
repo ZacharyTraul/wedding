@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=EB+Garamond" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Zach and Ellie's Wedding</title>
+  </head>
+
+  <body>
+      <div id="header">
+          <h1>- Zachary & Elizabeth -</h1>
+          <p>Saturday, September 19, 2026 | Estes Park, CO</p>
+          <p id="countdown">42 days to go!</p>
+              <script>
+                // Below is shamelessly stolen from W3
+                // Set the date we're counting down to
+                var countDownDate = new Date("Sept 19, 2026 16:00").getTime();
+
+                // Update the count down every 1 second
+                var x = function() {
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+                  // Display the result in the element with id="countdown"
+                  document.getElementById("countdown").innerHTML = days + " days to go!";
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "Just Married 🚗";
+                  }
+                };
+
+                x();
+              </script>
+          <hr/>
+          <div id="navbar">
+            <a href="index.html"><p>HOME</p></a>
+            <a href="gettingthere.html"><p>GETTING THERE</p></a>
+            <a href="thingstodo.html"><p id="currentpage">THINGS TO DO NEARBY</p></a>
+            <a href="rsvp.html"><p>RSVP</p></a>
+          </div>
+          <hr/>
+      </div>
+      <div id="content">
+          <div id="centerer">
+          <h1> Places to hike </h1>
+          <p>Estes Park has so many cool hikes! Most are in Rocky Mountain National Park (RMNP), but there are other ones too.  <strong>If you want to go to RMNP, you will need to reserve an entry time at <a href="recreation.gov">recreation.gov.</a> </strong>
+              Slots in September open on August 1st at 8am MDT; you should plan on being on the website ready to refresh, especially if you want to visit somewhere on Bear Lake Road, which requires a special reservation. If you miss the August date, additional reservations are available the night before at 7pm MDT. The same advice of being punctual applies for that too. If you miss both times, there are other hikes outside the park!</p>
+              <h2>Easy Hikes</h2>
+                <h3>Lily Lake</h3>
+                  <P>Lily Lake is super chill. It is basically flat and really short, but pretty. It is also directly on the road to the church and a great spot for photos.</P>
+                <h3>Bear Lake</h3>
+                  <p>Bear Lake is also chill. The same notes apply here re: flatness and length. If you do Bear Lake and want more, it connects up to a chain of other lakes.  The second closest is 1-2 miles away through the forest, with some non-negligable but very doable elevation gain.
+                  </p>
+                <h3>Lake Estes</h3>
+                <p>Lake Estes is in the middle of town and is a 3.75 mi fully paved loop ideal for a longer walk. It's also a great spot to run. There are a couple of hills but is otherwise about the flattest trail in Estes.
+                </p>
+              <h2>Medium Hikes</h2>
+                <h3>Gem Lake</h3>
+                  <p>This one is a different trailhead than the main entrance to RMNP. It can get crowded but is a great length at 4ish mi round trip.</p>
+                <h3>Ouzel Falls</h3>
+                  <p>This hike starts at the Wild Basin trailhead which is a 30 min drive outside of Estes Park. There are multiple other waterfalls before you get to Ouzel Falls itself, which are good turnaround points if you are ready to flip earlier.
+                  </p>
+              <h2>Hard Hikes</h2>
+                <h3>Twin Sisters</h3>
+                  <p>This hike is also on the way to the church and the trailhead is right across the road from Lily Lake. You do need an entry permit or pass to display on your dashboard. This is a strenuous hike with some sloggy, steep sections but lovely views from the top. You also go above treeline for the last half mile to mile which is fun.
+                  </p>
+                <h3>Chasm Lake</h3>
+                <p>This hike starts from the same trailhead as Longs Peak and climbs up to around 11,500 ft. Chasm Lake can be easily enjoyed with a reasonable wake up time because it is an 8ish mile round trip. There are some big stone steps and some scrambling near the lake. 
+                </p>
+        <hr>
+           <h1>Places to eat</h1>
+           <p>For all of these restaurants in downtown Estes, we recommend parking in the free garage by the visitor center and walking on the paved river trail. There is a small amount of parking behind (south) of the main thoroughfare but the garage is big and free
+            and the walk is pretty!
+           </p> 
+           <h2>Sweet</h2>
+           <h3>Purple Mountain Taffy</h3>
+           <p>This store is located on the main street of Estes Park, right before you turn to go to RMNP main entrance. They have a taffy pull in the window and a free sample of the day. If you go, Ellie would appreciate a piece or two of the Washington Cherry flavor.
+           </p>
+           <h3>Laura's</h3>
+           <p>If you, like Zach, prefer chocolate to taffy, the place right next door sells fudge, other chocolates, and ice cream. It is all delicious and you can't go wrong.
+           </p>
+           <h3>Munchin' House</h3>
+           <p>This is our go-to place in Estes for ice cream. You can approach from the river walk and enjoy your ice cream with the sounds of the river. Huckleberry is a Sundheim favorite but again, it's hard to go wrong.
+           </p>
+           <h2> Savory</h2>
+           <p>If you don't want another restaurant meal, we also enjoy getting fried chicken or equivalent at the Safeway deli and picnicking at one of the sites next to Lake Estes.
+           </p>
+           <h3>Mama Rosa's</h3>
+           <p>Italian food, in the main part of Estes. Honorable mention: Poppy's Grill, owned by the same people, is right next door if you prefer American cuisine. Enjoy the cute pika statues while you wait for a table.
+           </p>
+           <h3>Casa Grande</h3>
+           <p>Mexican food. Great especially if you are coming back hungry from a hike. This also has its own dedicated parking lot if you don't want to/aren't able to walk.
+           </p>
+           <h3>Tony's Pizza</h3>
+           <p>Pizza. This is not a fancy place and it shares space with a brewery. You order at the window but there is indoor seating and a cool wall of signatures.
+           </p>
+        <hr>
+        <h1> Things to do (non-hiking)</h1>
+        <h2>Shopping</h2>
+        <h3>Earthwood Collections</h3>
+        <p>This is a cute art gallery full of stunning and breakable objects.</p>
+        <h2>Entertainment</h2>
+        <h3>Mountain Coaster</h3>
+        <p>This was the site of some local zoning drama several years ago. We've never actually been here but based on the one other mountain coaster I've ridden it would be fun!
+        </p>
+        <h3>YMCA of the Rockies</h3>
+        <p>This is not a gym but rather a family-friendly resort! You can buy a day pass or stay in the lodges/cabins. Activities include roller skating, swimming, mini golf, tennis, direct hiking access to RMNP, horseback riding, etc.
+        </p>
+      </div>
+      </div>
+  </body>
+</html>
