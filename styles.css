@@ -30,10 +30,6 @@ a {
     display: flex;
     justify-content: center;
 }
-a {
-    color: inherit;
-    text-decoration: inherit;
-}
 #navbar p {
     margin: 1em 2em;
     font-size: 22px;
@@ -61,20 +57,6 @@ a {
     text-align: left;
     margin: auto;
 }
-#rsvp-button {
-    background-color: #EABAC8;
-    border-radius: 0.25em;
-    padding: 1em 2em;
-    font-weight: bold;
-    font-size: 20px;
-}
-#rsvp-button:hover {
-    background-color: #E0B0BD;
-    border-radius: 0.25em;
-    padding: 1em 2em;
-    font-weight: bold;
-}
-
 #centerer {
     width: 40em;
     margin-left: auto;
@@ -84,4 +66,21 @@ a {
 
 #centerer h1 {
     text-align: center;
+}
+#rsvp-button {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #264E79;
+    border-radius: 0.25em;
+    padding: 1em 1em;
+    font-size: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    color: black;
+    width: 12em;
+}
+#rsvp-button:hover {
+    text-decoration: 0.2em underline;
+    text-underline-offset: 0.2em;
+    text-decoration-color: #B5D2DA;    
 }
