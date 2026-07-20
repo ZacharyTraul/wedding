@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=EB+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zach and Ellie's Wedding</title>
+  </head>
+
+  <body>
+      <div id="flowbox">
+      <div id="header">
+          <h1>- Zachary & Elizabeth -</h1>
+          <p>Saturday, September 19, 2026 | Estes Park, CO</p>
+          <p id="countdown">42 days to go!</p>
+              <script>
+                // Below is shamelessly stolen from W3
+                // Set the date we're counting down to
+                var countDownDate = new Date("Sept 19, 2026 16:00").getTime();
+
+                // Update the count down every 1 second
+                var x = function() {
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+                  // Display the result in the element with id="countdown"
+                  document.getElementById("countdown").innerHTML = days + " days to go!";
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "Just Married 🚗";
+                  }
+                };
+
+                x();
+              </script>
+          <hr/>
+          <div id="navbar">
+            <a href="index.html"><p>HOME</p></a>
+            <a href="details.html" id="currentpage"><p>DETAILS</p></a>
+            <a href="thingstodo.html"><p>THINGS TO DO NEARBY</p></a>
+            <a href="registry.html"><p>REGISTRY</p></a>
+            <a href="rsvp.html"><p>RSVP</p></a>
+          </div>
+          <hr/>
+      </div>
+      <div id="content">
+        <div id="centerer">
+        <h2>RSVP Deadline</h2>
+          <p>Kindly respond by <strong>August 19, 2026</strong>.</p>
+        <h2>Guest Timeline</h2>
+          <p>
+          3:30 pm - Last shuttle to the chapel leaves Holiday Inn parking lot<br>
+          3:30 pm - Chapel doors open<br>
+          4:00 pm - Ceremony begins<br>
+          15 min after ceremony end - Reception doors open and appetizers served<br>
+          6:30 pm - Dinner served<br>
+          9:30 pm - Reception venue closes
+          </p>
+
+        <h2>Dress Code</h2>
+            <p>The dress code is semi-formal: suits for gentlemen and long dresses or jumpsuits for ladies.
+        <h2>Shuttle Service</h2>
+            <p>We will be providing a small shuttle van. Pickup will be in front of the Estes Park Holiday Inn at 3:15 and will drop off at the chapel.
+              After the ceremony, the shuttle will pick up from the chapel and drop off at the reception. The last shuttle from the reception back to the hotel will be at 8 pm.
+            </p>
+
+        <h2>Lodging</h2>
+          <p>There are no reserved hotel blocks. 
+            The closest hotel to the reception is the <a href="https://www.ihg.com/holidayinn/hotels/us/en/estes-park/denep/hoteldetail">Holiday Inn Estes Park</a>. For those wishing to minimize their time at high elevation, we recommend staying 55 minutes away in Loveland.</p>
+        
+        <h2>Additional Questions</h2>
+        <p>We hope to celebrate with you! If you have a specific concern or question, please get in touch with the bride, groom, or either of their parents.
+         </p>
+
+        <h2>Driving Directions and Parking</h2>
+          <p>Cellular reception at the chapel is poor to non-existent. Please download your driving directions before you go!
+          There is parking right next to chapel and additional overflow parking up the dirt road towards Tahosa Coffee House. </p>
+          <p>Parking is abundant and free at the reception venue. The reception is on the lower level of the building and has its own entrance.</p>
+          </div>
+
+          <h3>Ceremony</h3>
+          <p>
+            Chapel on the Rock<br>
+            10758 CO-7<br>
+            Allenspark, CO 80510
+          </p>
+          <iframe width="50%" height="30%" src="https://www.openstreetmap.org/export/embed.html?bbox=-105.53611502051353%2C40.24646959773093%2C-105.53524866700174%2C40.24744306086002&amp;layer=hot&amp;marker=40.24695633104548%2C-105.53568184375763" style="border: 1px solid black"></iframe>
+          <h3>Reception</h3>
+          <p>
+            Estes Valley Community Center<br>
+            660 Community Dr<br>
+            Estes Park, CO 80517
+          </p>
+          <iframe width="50%" height="30%" src="https://www.openstreetmap.org/export/embed.html?bbox=-105.50574302673341%2C40.36140766376884%2C-105.49198865890504%2C40.37695491352894&amp;layer=hot&amp;marker=40.36918173696546%2C-105.49886584281921" style="border: 1px solid black; margin-bottom: 2em;"></iframe>
+          <h3>Shuttle Pick Up/Drop Off</h3>
+          <p>
+            Holiday Inn Estes Park<br>
+            101 S St Vrain Ave <br>
+            Estes Park, CO 80517
+          </p>
+          <iframe width="50%" height="30%" src="https://www.openstreetmap.org/export/embed.html?bbox=-105.53611502051353%2C40.24646959773093%2C-105.53524866700174%2C40.24744306086002&amp;layer=hot&amp;marker=40.24695633104548%2C-105.53568184375763" style="border: 1px solid black"></iframe>
+          
+        </div>
+      </div>
+    </body>
+</html>
